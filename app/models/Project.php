@@ -12,7 +12,7 @@ class Project extends Eloquent implements UserInterface, RemindableInterface {
     public  $rules = array(
         'title'=>'required',
         'text'=>'required',
-        'image'=>'required',
+        'image'=>'required|image',
 
     );
 
