@@ -43,7 +43,7 @@ class ProjectController extends \BaseController {
             return Redirect::back()->withInput()->withErrors($this->user->messages);
         }
 
-        $name=$image->getClientOriginalName();
+        $name= str_replace(" ","_",$image->getClientOriginalName());
         $image->move($this->path,$name );
 
         $data=new Project;

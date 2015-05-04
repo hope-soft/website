@@ -1,4 +1,7 @@
 @extends('layouts/master_admin')
+@section('title')
+New Project
+@stop
 @section('breadcrumb')
 <li><a href="admin">Admin Panel</a></li>
 <li class="active">New Project</li>

@@ -2,6 +2,7 @@
 
 Route::get('/','HomeController@index');
 
+
 Route::get('admin','HomeController@create');
 Route::resource('home','HomeController');
 

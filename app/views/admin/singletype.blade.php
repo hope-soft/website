@@ -1,3 +1,9 @@
+@extends('layouts/master_admin')
+@section('title')
+Edit Type
+@stop
+
+@section('section2')
 <h1>Single Project </h1>
 {{Form::open(array('route'=>['type.update',$data->id],'files' => true,'method' => 'put'))}}
 
@@ -12,3 +18,4 @@
 {{Form::open(array('route'=>['type.destroy',$data->id],'method' => 'delete'))}}
     {{Form::submit('DELETE')}}
 {{Form::close()}}
+@stop

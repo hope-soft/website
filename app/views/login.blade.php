@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>title</title>
+<title>Log-in</title>
 {{ HTML::style('bootstrap/css/bootstrap.min.css') }}
 
 {{ HTML::script('bootstrap/js/bootstrap.min.js') }}

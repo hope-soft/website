@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>title</title>
+<title>@yield('title')</title>
 {{ HTML::style('bootstrap/css/bootstrap.min.css') }}
 
 {{ HTML::script('bootstrap/js/bootstrap.min.js') }}
@@ -40,10 +40,10 @@
     <div class="col-md-3">
         <div class="col-md-12">
           <ul class="nav nav-pills nav-stacked">
-            <li class="@yield('admin_menu')"><a href="admin">Admin Panel</a></li>
-            <li  class="@yield('password_menu')"><a href="password">Change Password</a></li>
-            <li class="@yield('project_menu')"><a href="project">New Project</a></li>
-            <li @yield('type_menu')><a href="type">New Type</a></li>
+            <li class="@yield('admin_menu')"><a href="/admin">Admin Panel</a></li>
+            <li  class="@yield('password_menu')"><a href="/password">Change Password</a></li>
+            <li class="@yield('project_menu')"><a href="/project">New Project</a></li>
+            <li class="@yield('type_menu')"><a href="/type">New Type</a></li>
           </ul>
         </div>
     </div>
