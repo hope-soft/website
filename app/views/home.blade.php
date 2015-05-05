@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 <!--Title-->
-@section('title') HopeSoft | Grate Software With Low Cost @stop()
+@section('title') HopeSoft | Greate Software With Low Cost @stop()
 
 <!--navigation-->
 @section('nav1') Home @stop()
@@ -81,7 +81,7 @@
 <div class="col-sm-6 col-md-3 isotope-item {{$post->type_id}}">
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="uploads/{{$post->image}}" alt="">
+										<img src="{{$path.$post->image}}" alt="">
 										<a class="overlay" data-toggle="modal" data-target="#{{$post->id}}">
 											<i class="fa fa-search-plus"></i>
 											<span>Web Designe</span>

@@ -14,7 +14,9 @@ class HomeController extends \BaseController {
 	{
 		$data=Project::all();
         $types=Type::all();
-        return View::make('home')->withdata($data)->withtypes($types);
+        $image_path="/uploads/";
+
+        return View::make('home')->withdata($data)->withtypes($types)->withpath($image_path);
 	}
 
 
