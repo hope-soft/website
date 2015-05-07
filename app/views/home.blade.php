@@ -81,7 +81,7 @@
 <div class="col-sm-6 col-md-3 isotope-item {{$post->type_id}}">
 								<div class="image-box">
 									<div class="overlay-container">
-										<img src="{{$path.$post->image}}" alt="">
+										<img src="uploads/thumbs/{{$post->image}}" alt="">
 										<a class="overlay" data-toggle="modal" data-target="#{{$post->id}}">
 											<i class="fa fa-search-plus"></i>
 											<span>Web Designe</span>

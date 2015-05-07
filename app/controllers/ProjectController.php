@@ -46,12 +46,20 @@ class ProjectController extends \BaseController {
     $name= str_replace(" ","_",$image->getClientOriginalName());
     $image->move($this->path,$name );
 
+
+
     $data=new Project;
     $data->image=$name;
     $data->title=$title;
     $data->text=$text;
     $data->type_id=$type;
     $data->save();
+
+    $img = Image::make('public/uploads/'.$image->getClientOriginalName());
+
+    $img->resize(320, 240);
+
+    $img->save('public/uploads/thumbs/'.$image->getClientOriginalName());
 
 
     return Redirect::route('adminPanel.index');
