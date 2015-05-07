@@ -3,7 +3,7 @@
 Admin Panel
 @stop
 @section('breadcrumb')
-<li class="active">Admin Panel</li>
+<li>Admin Panel</li>
 @stop
 @section('admin_menu')
 active

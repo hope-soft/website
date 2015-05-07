@@ -1,8 +1,6 @@
 <?php
 
 Route::get('/','HomeController@index');
-
-
 Route::get('admin','HomeController@create');
 Route::resource('home','HomeController');
 
@@ -13,6 +11,6 @@ Route::group(array('before' => 'auth'), function()
     Route::resource('type','TypeController');
     Route::get('logout','HomeController@destroy');
     Route::get('password','AdminController@update');
-    Route::get('project','projectController@create');
+    Route::get('project','ProjectController@create');
     Route::get('type','TypeController@create');
 });
