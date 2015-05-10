@@ -9,8 +9,10 @@ Route::group(array('before' => 'auth'), function()
     Route::resource('adminPanel','AdminController');
     Route::resource('project','ProjectController');
     Route::resource('type','TypeController');
+    Route::resource('role','RoleController');
     Route::get('logout','HomeController@destroy');
     Route::get('password','AdminController@update');
     Route::get('project','ProjectController@create');
     Route::get('type','TypeController@create');
+    Route::get('role','RoleController@create');
 });

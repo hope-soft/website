@@ -44,6 +44,7 @@
             <li  class="@yield('password_menu')"><a href="/password">Change Password</a></li>
             <li class="@yield('project_menu')"><a href="/project">New Project</a></li>
             <li class="@yield('type_menu')"><a href="/type">New Type</a></li>
+             <li class="@yield('role_menu')"><a href="/role">New Role</a></li>
           </ul>
         </div>
     </div>
