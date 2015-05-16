@@ -94,6 +94,7 @@
 												<li><a href="#portfolio">@yield('nav4')</a></li>
 												<li><a href="#clients">@yield('nav5')</a></li>
 												<li><a href="#contact">@yield('nav6')</a></li>
+												<li><a href="{{URL::route('login')}}">Login</a></li>
 											</ul>
 										</div>
 

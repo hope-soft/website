@@ -32,7 +32,6 @@ class HomeController extends \BaseController {
   }
 
 
-
   public function store()
   {
     $uname=Input::get('uname');
@@ -55,9 +54,9 @@ class HomeController extends \BaseController {
 
 
 
-  public function show($id)
+  public function show()
   {
-		//
+		  $user = UserModel::all();
   }
 
 
@@ -76,7 +75,7 @@ class HomeController extends \BaseController {
 
 	public function update($id)
 	{
-
+    
 	}
 
 
@@ -87,6 +86,13 @@ class HomeController extends \BaseController {
     return Redirect::to('admin');
 
   }
-
+  public function user()
+  {
+    return View::make('user');
+  }
+  public function insert()
+  {
+    
+  }
 
 }
